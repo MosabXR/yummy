@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+}
+
+aside {
+    left: -16rem;
+}
+
+.form-control {
+    background-color: transparent !important;
+}
+
+.form-control::placeholder {
+    color: #FFF !important;
+}
+
+.options-side {
+    width: 16rem;
+}
+
+.ribbon-side {
+    width: 4rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+li {
+    position: relative;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+.item-card {
+    max-height: 18.75rem;
+    cursor: pointer;
+}
+
+.item-card-overlay, .category-overlay {
+    background-color: rgba(255,255,255,0.7);
+    transition: transform 0.5s ease;
+}
+
+.item-card:hover .item-card-overlay {
+    transform: translateY(-100%);
+}
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid lightblue;
+    border-right-color: orange;
+    animation: l2 1s infinite linear;
+  }
+  @keyframes l2 {to{transform: rotate(1turn)}}

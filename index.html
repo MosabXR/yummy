@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Yummy</title>
+</head>
+
+<body class="bg-dark position-relative">
+  <aside class="h-100 bg-black text-white position-fixed top-0 z-2 d-flex">
+    <div class="options-side p-4 h-100 d-flex flex-column justify-content-between">
+      <ul class="list-unstyled d-flex flex-column gap-3 overflow-hidden">
+        <li id="search-link" class="cursor-pointer">Search</li>
+        <li id="categories-link" class="cursor-pointer">Categories</li>
+        <li id="area-link" class="cursor-pointer">Area</li>
+        <li id="ingredients-link" class="cursor-pointer">Ingredients</li>
+        <li id="contact-link" class="cursor-pointer">Contact Us</li>
+      </ul>
+      <div class="aside-bottom">
+        <div class="socials">
+          <i class="fa-brands fa-facebook cursor-pointer"></i>
+          <i class="fa-brands fa-twitter cursor-pointer"></i>
+          <i class="fa-solid fa-globe cursor-pointer"></i>
+        </div>
+        <p>Copyright Â© 2019 All Rights
+          Reserved.</p>
+      </div>
+    </div>
+    <div
+      class="ribbon-side px-2 py-4 text-black h-100 bg-white d-flex flex-column justify-content-between align-items-center">
+      <div class="yummy-logo">
+        <img src="img/logo.png" alt="Yummy Logo" class="w-100">
+      </div>
+      <div class="toggle-icon fs-4">
+        <i class="fa-solid fa-bars cursor-pointer"></i>
+        <i class="fa-solid fa-xmark cursor-pointer d-none"></i>
+      </div>
+      <div class="mini-socials d-flex flex-column gap-2">
+        <i class="fa-solid fa-globe cursor-pointer"></i>
+        <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+      </div>
+    </div>
+  </aside>
+  <div
+    class="loading-screen position-absolute z-1 start-0 top-0 w-100 h-100 bg-black text-white d-none justify-content-center align-items-center overflow-hidden">
+    <div class="loader"></div>
+  </div>
+  <main>
+    <section class="py-3 text-white">
+      <div class="container" id="main-container">
+        <div class="search d-flex gap-3 py-3 d-none">
+          <input type="text" class="form-control search-meal text-white" placeholder="Search By Name">
+          <input type="text" class="form-control search-meal text-white" placeholder="Search By First Letter"
+            maxlength="1">
+        </div>
+        <div class="form-holder col-12 py-5 d-none">
+          <form class="row g-2">
+            <div class="col-md-6">
+              <input type="text" class="form-control text-white contact-field mb-2" id="nameField" placeholder="Enter Your Name">
+              <div class="alert alert-danger d-none">
+                Special characters and numbers not allowed
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control text-white contact-field mb-2" id="emailField" placeholder="Enter Your Email">
+              <div class="alert alert-danger d-none">
+                Email not valid *exemple@yyy.zzz
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control text-white contact-field mb-2" id="phoneField" placeholder="Enter Your Phone">
+              <div class="alert alert-danger d-none">
+                Enter valid Phone Number
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="number" class="form-control text-white contact-field mb-2" id="ageField" placeholder="Enter Your Age">
+              <div class="alert alert-danger d-none">
+                Enter valid age
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="password" class="form-control text-white contact-field mb-2" id="passwordField" placeholder="Enter Your Password">
+              <div class="alert alert-danger d-none">
+                Enter valid password *Minimum eight characters, at least one letter and one number:*
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="password" class="form-control text-white contact-field mb-2" id="repassword" placeholder="Repassword">
+              <div class="alert alert-danger d-none">
+                Enter valid repassword
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button type="submit" class="btn btn-danger bg-transparent w-auto contact-submit" disabled>Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="row g-4" id="main-row">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/animate_module.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
